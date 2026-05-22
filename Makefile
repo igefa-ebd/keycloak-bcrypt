@@ -2,7 +2,7 @@
 
 UID := $(shell id -u)
 GID := $(shell id -g)
-KEYCLOAK_VERSION ?= 26.5.6
+KEYCLOAK_VERSION ?= 26.6.2
 GRADLE_USER_HOME_DIR ?= $(CURDIR)/.gradle-user
 DOCKER_GRADLE_BASE = docker run --rm --user "$(UID):$(GID)" \
 	-e HOME=/var/gradle \
